@@ -4,7 +4,11 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.2'
 }
 
+<<<<<<< HEAD
 group = 'com.'
+=======
+group = 'com.example'
+>>>>>>> ef6d960c8ecef331f5028bfac0e8d4abdf84d15a
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -22,11 +26,38 @@ repositories {
 }
 
 dependencies {
+<<<<<<< HEAD
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+=======
+	
+	// thymeleaf 라이브러리 
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+	
+	// Spring MVC
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	
+	// lombok 
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	
+	// developmentOnly  : 개발시에만 적용 , 배포 할 때는 배포되지 않음. (*.jar ) 
+	// devtool
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+	// Junit 테스트 라이브러리 
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	// H2 DB 접속 : 개발시에만 사용됨, ==> Oracle, MySQL, MSSQL, PostgreSQL ....
+	runtimeOnly 'com.h2database:h2' 
+	
+	//JPA 라이브러리 등록 
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+>>>>>>> ef6d960c8ecef331f5028bfac0e8d4abdf84d15a
 }
 
 tasks.named('test') {
