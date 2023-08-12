@@ -4,9 +4,17 @@ plugins {
 	id 'io.spring.dependency-management' version '1.1.2'
 }
 
+<<<<<<< HEAD
 group = 'com.'
 group = 'com.example'
 
+=======
+<<<<<<< HEAD
+group = 'com.'
+=======
+group = 'com.example'
+>>>>>>> ef6d960c8ecef331f5028bfac0e8d4abdf84d15a
+>>>>>>> 18773572967e8a68e94819b3d7ece7a02ddc9885
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -24,11 +32,19 @@ repositories {
 }
 
 dependencies {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 18773572967e8a68e94819b3d7ece7a02ddc9885
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 18773572967e8a68e94819b3d7ece7a02ddc9885
 	
 	// thymeleaf 라이브러리 
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
@@ -53,8 +69,16 @@ dependencies {
 	
 	//JPA 라이브러리 등록 
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+<<<<<<< HEAD
+=======
+>>>>>>> ef6d960c8ecef331f5028bfac0e8d4abdf84d15a
+>>>>>>> 18773572967e8a68e94819b3d7ece7a02ddc9885
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 18773572967e8a68e94819b3d7ece7a02ddc9885
